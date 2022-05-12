@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScreenPreApp from "./pages/ScreenPreApp";
-import Tela4 from "./Tela4";
-import Tela5 from "./Tela5";
-import Tela6 from "./Tela6";
+import Tela4 from "./pages/Tela4";
+import Tela5 from "./pages/Tela5";
+import Tela6 from "./pages/Tela6";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 

@@ -4,12 +4,13 @@ export default function Tela6(){
     
     return(
     <>
-    <Container>
     <Caixa>
-        <img className='imgg2' src='Vector.png'></img>
-        <p className="imgg2"><div className='ab'>My Cart</div></p>
-        <img src='Group 201.png'></img>
+        <IMG2 src='Vector.png'></IMG2>
+        <p><Ab>MY Cart</Ab></p >
+        <IMG22  src='Group 201.png'></IMG22 >
     </Caixa>
+    <Container>
+    
     <Oder>
         Orders
     </Oder>
@@ -76,6 +77,7 @@ export default function Tela6(){
 const Linha = styled.div`
 background: black;
 height: 0.5px;
+width:350px;
 margin-bottom: 30px;
 margin-top: 10px;
 `
@@ -98,12 +100,16 @@ const Fim = styled.div`
 display:flex;
 `
 const Container = styled.div`
-    margin-left: 30px;
-    margin-top: 30px;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
 `
 const Caixa  = styled.div`
-    display:flex;
-    margin-bottom: 20px;
+display:flex;
+margin-bottom: 20px;
+justify-content:space-between;
+margin-top: 30px;
 `
 const Oder  = styled.p`
     margin-top: 10px;
@@ -130,4 +136,17 @@ const Botao2 = styled.button`
 height:25px;
 width: 25px;
 background: rgb(43, 143, 235);
+`
+const IMG2 = styled.img`
+margin-left: 30px;
+`
+const IMG22 = styled.img`
+margin-right: 30px;
+`
+const Ab = styled.div`
+width:80px;
+   
+display: flex;
+flex-direction: column;
+justify-content:center;
 `

@@ -4,12 +4,13 @@ export default function Tela5(){
     
     return(
     <>
-    <Container>
-        <Caixa >
-            <IMG2 src='Vector.png'></IMG2>
-            <IMG22 ><Ab>Details</Ab></IMG22 >
-            <img src='Group 201.png'></img>
+     <Caixa >
+            <IMG22 src='Vector.png'></IMG22>
+            <p ><Ab>Details</Ab></p >
+            <IMG2 src='Group 201.png'></IMG2>
         </Caixa>
+    <Container>
+        
         <IMG src='klipartz 39.png'></IMG>
         <Compras>marca</Compras>
        <NomeMarca><p  className="comprasp">Nike Air Max 87</p></NomeMarca>
@@ -53,17 +54,21 @@ justify-content:center;
 `
 const NomeMarca = styled.div`
 width:300px;
-margin-left: 40px;
+
 display: flex;
 justify-content: center;
 `
 const Container = styled.div`
-    margin-left: 30px;
-    margin-top: 30px;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
 `
 const Caixa  = styled.div`
     display:flex;
     margin-bottom: 20px;
+    justify-content:space-between;
+    margin-top: 30px;
 `
 const IMG = styled.img`
     margin-left: 60px;
@@ -71,13 +76,14 @@ const IMG = styled.img`
     width:250px;
 `
 const IMG2 = styled.img`
-margin-right: 120px;
+    margin-right:30px;
+
 `
-const IMG22 = styled.p`
-margin-right: 120px;
+const IMG22 = styled.img`
+margin-left: 30px;
 `
 const Compras = styled.p`
-margin-left: 160px; 
+
 `
 const Anuncio2 = styled.div`
     display: flex;
