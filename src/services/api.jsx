@@ -37,3 +37,11 @@ export default api;
 
 
 
+  const token = await axios.post(`${BASE_URL}/login`, data);
+  return token;
+}
+
+const api ={
+    login
+}
+export default api;
