@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { useState } from "react";
-import "./estilo.css"
+import "./style.jsx"
 export default function Tela7(){
     const [valor, setValor] = useState('ok');
     function val(){

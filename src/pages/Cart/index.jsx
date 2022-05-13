@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Cartt from "./Cartt";
+import Cartt from "./Cart";
 export default function Tela6(){
     
     const n=[1,2,3]
