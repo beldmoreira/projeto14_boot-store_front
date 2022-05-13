@@ -28,7 +28,7 @@ const Title = styled.span`
 
 const Button = styled.button`
     height: 11vmin;
-    width: 40vmin;
+    width: 50vmin;
     border-radius: 50px;
     border:none;
     margin-bottom: 48px;

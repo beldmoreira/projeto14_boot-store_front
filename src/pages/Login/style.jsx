@@ -4,22 +4,29 @@ import { Link } from "react-router-dom";
 
 const UpperPart = styled.div`
     border-radius: 0px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:330px;
+    height:100%;
 
     img{
         position: absolute;
         top: 0;
         height: 35%;
+        width:100%;
+        border-radius:5px;
     }
 `;
 const Span = styled.div`
-font-family: DM Sans;
-font-size: 6vmin;
-font-weight: 700;
-line-height: 31px;
-letter-spacing: 0em;
-text-align: left;
-color: #222222;
+    font-family: DM Sans;
+    font-size: 6vmin;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #222222;
 
 `;
 const Container=styled.div`
@@ -28,6 +35,9 @@ const Container=styled.div`
     align-items: center;
     justify-content: center;
     background-color: #FFFFFF;
+    position:absolute;
+  
+    bottom:0;
 `
 const StyledLink = styled(Link)`
     font-family:Inter;

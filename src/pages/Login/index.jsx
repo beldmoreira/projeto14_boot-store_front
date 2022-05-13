@@ -42,7 +42,7 @@ export default function Login(){
         </UpperPart>
 
         <Container>
-            <Span> Log In </Span>
+            <Span> Login </Span>
             <Form onSubmit={handleSubmit}>
               <CgUser/>
                 <Input
@@ -62,7 +62,7 @@ export default function Login(){
                 />
             
                 <BlueButton onClick={() => navigate("/register")} >
-                     Login
+                     LOGIN
                 </BlueButton>
             </Form>
             <StyledLink to="/register">
