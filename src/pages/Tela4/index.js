@@ -49,12 +49,19 @@ export default function Tela4(){
                
             </Anuncio2>
         </div>
+        <B>ADD TO CART </B>
     </Container>
 
       
     </>
     )
 }
+const B= styled.button`
+height:70px;
+width:350px;
+border-radius: 35px;
+background: rgb(43, 143, 235);
+`
 const Container = styled.div`
 display:flex;
 justify-content:center;

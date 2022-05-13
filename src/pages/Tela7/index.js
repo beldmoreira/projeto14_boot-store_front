@@ -1,5 +1,11 @@
 import styled from 'styled-components';
+import { useState } from "react";
+import "./estilo.css"
 export default function Tela7(){
+    const [valor, setValor] = useState('ok');
+    function val(){
+        setValor('Fim')
+    }
     return(
         <>
         <Caixa>
@@ -13,18 +19,45 @@ export default function Tela7(){
     <Container>
         
         <Cartao>
+        
         <P>credit Card</P>
         <Pn>1452 5847250 5485</Pn>
         < Pnome>Mohammod Ali</Pnome>
             < Cartao2></Cartao2>
-
+            <div className={valor} >
+            <B >batata </B>
+            </div  >
         </Cartao>
-        <B>CKECKOUT </B>
+        <B onClick={val}>CKECKOUT </B>
+       
+
     </Container>
 
         </>
     )
+    
 }
+//display:none;
+const Fim  = styled.div`
+display:none;
+height:350px;
+width:400px;
+background: red;
+position: absolute;
+    top:100px;
+    left: -50px;
+
+`
+const Fim2  = styled.div`
+display:none;
+height:350px;
+width:400px;
+background: rgb(43, 143, 235);
+position: absolute;
+    top:100px;
+    left: -50px;
+
+`
 const B= styled.button`
 height:70px;
 width:350px;
