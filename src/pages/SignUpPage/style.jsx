@@ -18,8 +18,8 @@ line-height: 31px;
 letter-spacing: 0em;
 text-align: center;
 color: #222222;
-margin-bottom: 60px;
-margin-top: 60px;
+margin-bottom: 50px;
+margin-top: 50px;
 `;
 
 const StyledLink = styled(Link)`
@@ -28,7 +28,7 @@ const StyledLink = styled(Link)`
     font-size: 16px;
     line-height: 19.36px;
     color: #888888;
-    margin-top: 60px;
+    margin-top: 20px;
 `;
 const LinkStyle = styled(Link)`
     font-family:Inter;

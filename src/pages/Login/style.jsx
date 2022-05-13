@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 
+
 const UpperPart = styled.div`
     border-radius: 0px;
     display: flex;
@@ -17,6 +18,16 @@ const UpperPart = styled.div`
         width:100%;
         border-radius:25px;
     }
+   
+@media (min-width: 600px)
+{
+    height:200px;
+    img{
+        width:327px;
+        height:160px
+
+}
+;
 `;
 
 const Container=styled.div`
@@ -25,8 +36,12 @@ const Container=styled.div`
     align-items: center;
     justify-content: center;
     background-color: #FFFFFF;
-  
     bottom:0;
+    @media (min-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+    }
 `
 const Span = styled.div`
     font-family: DM Sans;
@@ -55,8 +70,6 @@ const LinkStyle = styled(Link)`
     text-decoration: underline;
     color: #95C7F5;
 `
-
-
 export{
     Container,
     StyledLink,
