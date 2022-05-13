@@ -3,7 +3,7 @@ import { useState } from "react";
 import Form from "../../components/Form";
 import Input from "../../components/Input";
 import Pair from "../../assets/pairshoes.png";
-import {CgLock, CgUser } from "react-icons/cg";
+import {IoLockClosed, IoMail } from "react-icons/io5";
 import BlueButton from "../../components/BlueButton";
 import api from "../../services/api";
 import useAuth from "../../hooks/useAuth";
@@ -44,7 +44,7 @@ export default function Login(){
         <Container>
             <Span> Login </Span>
             <Form onSubmit={handleSubmit}>
-              <CgUser/>
+              <IoMail color="#2B8FEB"/>
                 <Input
                 type="email"
                 placeholder="E-mail"
@@ -52,7 +52,7 @@ export default function Login(){
                 onChange={handleChange}
                 value={formData.email}
                 />
-              <CgLock/>
+              <IoLockClosed color="#2B8FEB"/>
                 <Input
                 type="password"
                 placeholder="....."

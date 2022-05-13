@@ -45,6 +45,7 @@ const StyledLink = styled(Link)`
     font-size: 16px;
     line-height: 19.36px;
     color: #888888;
+    
 `;
 const LinkStyle = styled(Link)`
     font-family:Inter;

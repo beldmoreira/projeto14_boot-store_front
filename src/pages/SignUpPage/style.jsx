@@ -11,15 +11,15 @@ const Container = styled.div`
     background-color: #FFFFFF;
 `
 const Span = styled.div`
-font-family: DM Sans;
-font-size: 6vmin;
-font-weight: 700;
-line-height: 31px;
-letter-spacing: 0em;
-text-align: left;
-color: #222222;
-margin-bottom: 40px;
-margin-top: 60px;
+    font-family: DM Sans;
+    font-size: 6vmin;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #222222;
+    margin-bottom: 40px;
+    margin-top: 60px;
 `;
 
 const StyledLink = styled(Link)`
