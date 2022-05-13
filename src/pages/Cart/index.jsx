@@ -87,7 +87,7 @@ const Oder  = styled.p`
     margin-left: 30px;
 }
 `
-const Cart = styled.div`
+const Cartlayout = styled.div`
 display: flex;
 margin-bottom: 20px;s
 `
