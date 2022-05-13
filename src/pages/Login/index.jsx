@@ -3,7 +3,7 @@ import { useState } from "react";
 import Form from "../../components/Form";
 import Input from "../../components/Input";
 import Pair from "../../assets/pairshoes.png";
-import {CgLock, } from "react-icons/cg";
+import {CgLock, CgUser } from "react-icons/cg";
 import BlueButton from "../../components/BlueButton";
 import api from "../../services/api";
 import useAuth from "../../hooks/useAuth";
@@ -44,6 +44,7 @@ export default function Login(){
         <Container>
             <Span> Log In </Span>
             <Form onSubmit={handleSubmit}>
+              <CgUser/>
                 <Input
                 type="email"
                 placeholder="E-mail"
@@ -51,7 +52,7 @@ export default function Login(){
                 onChange={handleChange}
                 value={formData.email}
                 />
-
+              <CgLock/>
                 <Input
                 type="password"
                 placeholder="....."
