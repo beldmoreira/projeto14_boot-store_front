@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Form from "../../components/Form";
 import Input from "../../components/Input";
-import { CgLock, CgUser } from "react-icons/cg";
+import { CgLock, CgUser, CgMail } from "react-icons/cg";
 import BlueButton from "../../components/BlueButton";
 import axios from "axios";
 
@@ -13,7 +13,7 @@ function SignUpPage() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
-  const navigator = useNavigate();
+  const navigate = useNavigate();
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -26,7 +26,7 @@ function SignUpPage() {
       });
 
       alert("Cadastro feito com sucesso!");
-      navigator("/");
+      navigate("/login");
     } catch (error) {
       alert("Ops! Infelizmente aconteceu um erro! Tente novamente!");
       console.log(error);
@@ -46,7 +46,7 @@ function SignUpPage() {
             onChange={(e) => setName(e.target.value)}
           />
 
-          {/* email */}
+          {CgMail}
           <Input
             type="text"
             value={email}
@@ -73,10 +73,10 @@ function SignUpPage() {
           <BlueButton type="submit" onClick={handleSubmit}>Cadastrar</BlueButton>
         </Form>
       </div>
-      <StyledLink to="/">
+      <StyledLink to="/login">
         Já tem uma conta?
       </StyledLink>
-      <LinkStyle to="/">
+      <LinkStyle to="/login">
         Login
       </LinkStyle>
     </Container>

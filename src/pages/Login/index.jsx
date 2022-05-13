@@ -61,7 +61,7 @@ export default function Login(){
                 value={formData.password}
                 />
             
-                <BlueButton onClick={() => navigate("/register")} >
+                <BlueButton type="submit" >
                      LOGIN
                 </BlueButton>
             </Form>
