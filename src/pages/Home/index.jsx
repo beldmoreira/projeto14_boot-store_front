@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import {B,Container,Caixa,IMG,IMG2,IMG22,Anuncio2,P,D,Oder} from "./style";
+import BlueButton from "../../components/BlueButton";
 import axios from 'axios';
 import Div from "./Div";
 export default function Tela4(){
@@ -47,7 +48,7 @@ export default function Tela4(){
                
             </Anuncio2>
         </div>
-        <B>ADD TO CART </B>
+        <BlueButton>ADICIONAR AO CARRINHO </BlueButton>
     </Container>
       
     </>

@@ -70,7 +70,7 @@ function SignUpPage() {
             onChange={(e) => setConfirmPassword(e.target.value)}
           />
 
-          <BlueButton type="submit" onClick={handleSubmit}>Cadastrar</BlueButton>
+          <BlueButton type="submit" onClick={handleSubmit}>CADASTRAR</BlueButton>
         </Form>
       </>
       <StyledLink to="/login">
