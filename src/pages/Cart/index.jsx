@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import BlueButton from '../../components/BlueButton';
-import Cart from "./Cart";
+import CartStyle from "./CartStyle";
 
 
 export default function Cart(){
@@ -24,7 +24,7 @@ export default function Cart(){
         {n.map((ns)=>{
             return(
                 <>
-                <Cart/>
+                <CartStyle/>
                 </>
             )
         })}
