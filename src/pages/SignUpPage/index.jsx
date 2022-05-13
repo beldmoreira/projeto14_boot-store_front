@@ -1,5 +1,10 @@
-import {useState} from "react";
-import {Link, useNavigate} from "react-router-dom";
+import { Container, StyledLink, LinkStyle, Span } from "./style";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Form from "../../components/Form";
+import Input from "../../components/Input";
+import { CgLock, CgUser } from "react-icons/cg";
+import BlueButton from "../../components/BlueButton";
 import axios from "axios";
 
 function SignUpPage() {
@@ -7,9 +12,9 @@ function SignUpPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  
+
   const navigator = useNavigate();
-  
+
   async function handleSubmit(e) {
     e.preventDefault();
     try {
@@ -19,7 +24,7 @@ function SignUpPage() {
         password,
         confirmPassword
       });
-      
+
       alert("Cadastro feito com sucesso!");
       navigator("/");
     } catch (error) {
@@ -27,14 +32,14 @@ function SignUpPage() {
       console.log(error);
     }
   }
-  
+
   return (
-    <div className="page">
+    <Container>
       <div>
-        <h1>Sign up</h1>
-        <form>
-          {/* nome */}
-          <input 
+        <Span>Register Account</Span>
+        <Form>
+          <CgUser />
+          <Input
             type="text"
             value={name}
             placeholder="Nome"
@@ -42,37 +47,42 @@ function SignUpPage() {
           />
 
           {/* email */}
-          <input 
-            type="text" 
+          <Input
+            type="text"
             value={email}
-            placeholder="E-mail" 
+            placeholder="E-mail"
             onChange={(e) => setEmail(e.target.value)}
           />
 
-          {/* senha */}
-          <input 
-            type="text" 
+          <CgLock />
+          <Input
+            type="text"
             value={password}
             placeholder="Senha"
             onChange={(e) => setPassword(e.target.value)}
           />
 
-          {/* confirmar senha */}
-          <input 
-            type="text" 
+          <CgLock />
+          <Input
+            type="text"
             value={confirmPassword}
             placeholder="Confirme a senha"
             onChange={(e) => setConfirmPassword(e.target.value)}
           />
 
-          <button type="submit" onClick={handleSubmit}>Cadastrar</button>
-        </form>
+          <BlueButton type="submit" onClick={handleSubmit}>Cadastrar</BlueButton>
+        </Form>
       </div>
-      <div>
-        <Link to="/">Já tem uma conta? Entre agora!</Link>
-      </div>
-    </div>
+      <StyledLink to="/">
+        Já tem uma conta?
+      </StyledLink>
+      <LinkStyle to="/">
+        Login
+      </LinkStyle>
+    </Container>
   )
 }
 
 export default SignUpPage;
+
+
