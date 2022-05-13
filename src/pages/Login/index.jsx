@@ -65,10 +65,10 @@ export default function Login(){
                      LOGIN
                 </BlueButton>
             </Form>
-            <StyledLink to="/register">
+            <StyledLink to="/signup">
                 Don&#39;t have an account?
             </StyledLink>
-            <LinkStyle to="/register">
+            <LinkStyle to="/signup">
                 Sign Up 
             </LinkStyle>
            
