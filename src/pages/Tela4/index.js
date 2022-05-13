@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
+import Div from "./Div";
 export default function Tela4(){
-    
+    const n=[1,2,3,4,5,6]
     
     return(
     <>
@@ -11,10 +12,11 @@ export default function Tela4(){
         <IMG22 src='Vector.png'></IMG22>
         <IMG2 src='Group 201.png'></IMG2>
     </Caixa >
+    <Oder>Hello</Oder>
     <Container>
         
         
-        <p>Hello</p>
+       
         <Anuncio2>
           <img src='Rectangle 336.png'></img>
           <img src='Rectangle 336.png'></img>
@@ -23,73 +25,27 @@ export default function Tela4(){
         <p>New Arrivals</p>
         <div>
             <Anuncio2>
-            <D>
-                <img src='klipartz 39.png'></img>
-                <P>nome</P>
-                <P>preço</P>
-            </D> 
-            <D>
-                <img src='klipartz 39.png'></img>
-                <P>nome</P>
-                <P>preço</P>
-            </D> 
-            <D>
-                <img src='klipartz 39.png'></img>
-                <P>nome</P>
-                <P>preço</P>
-            </D> 
-            <D>
-                <img src='klipartz 39.png'></img>
-                <P>nome</P>
-                <P>preço</P>
-            </D> 
-            <D>
-                <img src='klipartz 39.png'></img>
-                <P>nome</P>
-                <P>preço</P>
-            </D> 
-            <D>
-                <img src='klipartz 39.png'></img>
-                <P>nome</P>
-                <P>preço</P>
-            </D> 
-               
+            {n.map((ns)=>{
+            return(
+                <>
+                    <Div/>
+                </>
+                )
+            })}
+           
             </Anuncio2>
         </div>
         <p>Jordan Classic</p>
         <div>
             <Anuncio2>
-                <D>
-                    <img src='klipartz 39.png'></img>
-                    <P>nome</P>
-                    <P>preço</P>
-                </D>
-                <D>
-                    <img src='klipartz 39.png'></img>
-                    <P>nome</P>
-                    <P>preço</P>
-                </D> 
-                <D>
-                    <img src='klipartz 39.png'></img>
-                    <P>nome</P>
-                    <P>preço</P>
-                </D> 
-                <D>
-                    <img src='klipartz 39.png'></img>
-                    <P>nome</P>
-                    <P>preço</P>
-                </D> 
-                <D>
-                    <img src='klipartz 39.png'></img>
-                    <P>nome</P>
-                    <P>preço</P>
-                </D> 
-                <D>
-                    <img src='klipartz 39.png'></img>
-                    <P>nome</P>
-                    <P>preço</P>
-                </D>  
-               
+            {n.map((ns)=>{
+            return(
+                <>
+                    <Div/>
+                </>
+                )
+            })}
+             
                
             </Anuncio2>
         </div>
@@ -133,4 +89,10 @@ margin-left: 35px;
 `
 const D = styled.div`
 margin-right:10px;
+`
+const Oder  = styled.p`
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
 `

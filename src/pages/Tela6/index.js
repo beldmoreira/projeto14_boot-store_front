@@ -1,58 +1,31 @@
 import styled from 'styled-components';
+import Cartt from "./Cartt";
 export default function Tela6(){
     
-    
+    const n=[1,2,3]
     return(
     <>
     <Caixa>
-        <IMG2 src='Vector.png'></IMG2>
+        <IMG2 src='Arrow - Left.png'></IMG2>
         <p><Ab>MY Cart</Ab></p >
-        <IMG22  src='Group 201.png'></IMG22 >
+        <IMG22  ></IMG22 >
     </Caixa>
+    <Oder>
+        Orders
+    </Oder>
     <Container>
     
     <Oder>
         Orders
     </Oder>
-    <Cart >
-        <img src='klipartz 39.png'></img>
-        <Inf>
-            <p>nome</p>
-            <p>tamanho</p>
-            <p>preço</p>
-        </Inf>
-        < Botao>
-            < Botao2  >+</ Botao2 >
-            <p>1</p>
-            < Botao2  >+</ Botao2 >
-        </ Botao>
-    </Cart >
-    <Cart >
-        <img src='klipartz 39.png'></img>
-        <Inf>
-            <p>nome</p>
-            <p>tamanho</p>
-            <p>preço</p>
-        </Inf>
-        < Botao>
-            < Botao2  >+</ Botao2 >
-            <p>1</p>
-            < Botao2   >+</ Botao2 >
-        </ Botao>
-    </Cart >
-    <Cart >
-        <img src='klipartz 39.png'></img>
-        <Inf>
-            <p>nome</p>
-            <p>tamanho</p>
-            <p>preço</p>
-        </Inf>
-        < Botao>
-            < Botao2   >+</ Botao2 >
-            <p>1</p>
-            < Botao2   >+</ Botao2 >
-        </ Botao>
-    </Cart >
+    {n.map((ns)=>{
+        return(
+            <>
+            <Cartt/>
+            </>
+        )
+    })}
+ 
    
     <Fim >
         <Item><p>Subtotal</p></Item>
@@ -114,6 +87,7 @@ margin-top: 30px;
 const Oder  = styled.p`
     margin-top: 10px;
     margin-bottom: 20px;
+    margin-left: 30px;
 }
 `
 const Cart = styled.div`
@@ -140,7 +114,7 @@ background: rgb(43, 143, 235);
 const IMG2 = styled.img`
 margin-left: 30px;
 `
-const IMG22 = styled.img`
+const IMG22 = styled.p`
 margin-right: 30px;
 `
 const Ab = styled.div`

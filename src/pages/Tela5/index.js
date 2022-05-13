@@ -5,7 +5,7 @@ export default function Tela5(){
     return(
     <>
      <Caixa >
-            <IMG22 src='Vector.png'></IMG22>
+            <IMG22 src='Arrow - Left.png'></IMG22>
             <p ><Ab>Details</Ab></p >
             <IMG2 src='Group 201.png'></IMG2>
         </Caixa>
