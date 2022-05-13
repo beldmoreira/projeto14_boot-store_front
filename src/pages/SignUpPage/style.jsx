@@ -16,9 +16,9 @@ font-size: 6vmin;
 font-weight: 700;
 line-height: 31px;
 letter-spacing: 0em;
-text-align: left;
+text-align: center;
 color: #222222;
-margin-bottom: 40px;
+margin-bottom: 60px;
 margin-top: 60px;
 `;
 
@@ -28,7 +28,7 @@ const StyledLink = styled(Link)`
     font-size: 16px;
     line-height: 19.36px;
     color: #888888;
-    margin-top: 20px;
+    margin-top: 60px;
 `;
 const LinkStyle = styled(Link)`
     font-family:Inter;

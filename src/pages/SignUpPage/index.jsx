@@ -3,7 +3,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Form from "../../components/Form";
 import Input from "../../components/Input";
-import { CgLock, CgUser } from "react-icons/cg";
 import BlueButton from "../../components/BlueButton";
 import axios from "axios";
 
@@ -36,9 +35,8 @@ function SignUpPage() {
   return (
     <Container>
       <div>
-        <Span>Register Account</Span>
+        <Span>Crie sua conta</Span>
         <Form>
-          <CgUser />
           <Input
             type="text"
             value={name}
@@ -54,7 +52,6 @@ function SignUpPage() {
             onChange={(e) => setEmail(e.target.value)}
           />
 
-          <CgLock />
           <Input
             type="text"
             value={password}
@@ -62,7 +59,6 @@ function SignUpPage() {
             onChange={(e) => setPassword(e.target.value)}
           />
 
-          <CgLock />
           <Input
             type="text"
             value={confirmPassword}
@@ -76,7 +72,7 @@ function SignUpPage() {
       <StyledLink to="/">
         Já tem uma conta?
       </StyledLink>
-      <LinkStyle to="/">
+      <LinkStyle to="/login">
         Login
       </LinkStyle>
     </Container>
