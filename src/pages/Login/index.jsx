@@ -53,23 +53,24 @@ export default function Login(){
                 value={formData.email}
                 />
               <IoLockClosed color="#2B8FEB"/>
+
                 <Input
                 type="password"
-                placeholder="....."
+                placeholder="Senha"
                 name="password"
                 onChange={handleChange}
                 value={formData.password}
                 />
             
-                <BlueButton type="submit" >
-                     LOGIN
+                <BlueButton onClick={() => navigate("/4")} >
+                     Entrar
                 </BlueButton>
             </Form>
             <StyledLink to="/signup">
-                Don&#39;t have an account?
+               Ainda não tem uma conta?
             </StyledLink>
             <LinkStyle to="/signup">
-                Sign Up 
+               Criar conta
             </LinkStyle>
            
         </Container>

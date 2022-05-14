@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Form from "../../components/Form";
 import Input from "../../components/Input";
 import { IoLockClosed, IoPerson, IoMail } from "react-icons/io5";
+
 import BlueButton from "../../components/BlueButton";
 import axios from "axios";
 
@@ -36,7 +37,7 @@ function SignUpPage() {
   return (
     <Container>
       <>
-        <Span>Register Account</Span>
+        <Span>Crie sua conta</Span>
         <Form>
           <IoPerson color="#2B8FEB"/>
           <Input
@@ -55,6 +56,7 @@ function SignUpPage() {
           />
 
           <IoLockClosed color="#2B8FEB"/>
+
           <Input
             type="text"
             value={password}

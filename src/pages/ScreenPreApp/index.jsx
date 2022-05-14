@@ -10,7 +10,7 @@ export default function ScreenPreApp(){
             <img alt="footpic.png" src={Footpic}/>
             <LowerPart>
                 <Title> Find Your Best Collections </Title>
-                <Button onClick={() => navigate("/login")}> GET STARTED </Button>
+                <Button onClick={() => navigate("/login")}> Vamos lá! </Button>
             </LowerPart>
         </Container>
 
