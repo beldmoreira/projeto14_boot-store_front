@@ -3,6 +3,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Form from "../../components/Form";
 import Input from "../../components/Input";
+import { IoLockClosed, IoPerson, IoMail } from "react-icons/io5";
+
 import BlueButton from "../../components/BlueButton";
 import axios from "axios";
 
@@ -12,7 +14,7 @@ function SignUpPage() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
-  const navigator = useNavigate();
+  const navigate = useNavigate();
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -25,7 +27,7 @@ function SignUpPage() {
       });
 
       alert("Cadastro feito com sucesso!");
-      navigator("/");
+      navigate("/login");
     } catch (error) {
       alert("Ops! Infelizmente aconteceu um erro! Tente novamente!");
       console.log(error);
@@ -34,9 +36,10 @@ function SignUpPage() {
 
   return (
     <Container>
-      <div>
+      <>
         <Span>Crie sua conta</Span>
         <Form>
+          <IoPerson color="#2B8FEB"/>
           <Input
             type="text"
             value={name}
@@ -44,13 +47,15 @@ function SignUpPage() {
             onChange={(e) => setName(e.target.value)}
           />
 
-          {/* email */}
+          <IoMail color="#2B8FEB"/>
           <Input
             type="text"
             value={email}
             placeholder="E-mail"
             onChange={(e) => setEmail(e.target.value)}
           />
+
+          <IoLockClosed color="#2B8FEB"/>
 
           <Input
             type="text"
@@ -59,6 +64,7 @@ function SignUpPage() {
             onChange={(e) => setPassword(e.target.value)}
           />
 
+          <IoLockClosed color="#2B8FEB"/>
           <Input
             type="text"
             value={confirmPassword}
@@ -66,10 +72,10 @@ function SignUpPage() {
             onChange={(e) => setConfirmPassword(e.target.value)}
           />
 
-          <BlueButton type="submit" onClick={handleSubmit}>Cadastrar</BlueButton>
+          <BlueButton type="submit" onClick={handleSubmit}>CADASTRAR</BlueButton>
         </Form>
-      </div>
-      <StyledLink to="/">
+      </>
+      <StyledLink to="/login">
         Já tem uma conta?
       </StyledLink>
       <LinkStyle to="/login">

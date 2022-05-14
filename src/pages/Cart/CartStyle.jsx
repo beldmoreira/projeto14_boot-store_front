@@ -2,7 +2,7 @@ import styled from 'styled-components';
 export default function Cartt(){
     return(
         <>
-         <Cart >
+         <CartStyle >
         <img src='klipartz 39.png'></img>
         <Inf>
             <p>nome</p>
@@ -14,13 +14,13 @@ export default function Cartt(){
             <p>1</p>
             < Botao2  >+</ Botao2 >
         </ Botao>
-    </Cart >
+    </CartStyle >
         </>
     )
 }
-const Cart = styled.div`
+const CartStyle = styled.div`
 display: flex;
-margin-bottom: 20px;s
+margin-bottom: 20px;
 `
 const Inf = styled.div`
 display: flex;

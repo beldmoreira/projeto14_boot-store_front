@@ -1,49 +1,52 @@
 import styled from 'styled-components';
-import Cartt from "./Cartt";
-export default function Tela6(){
-    
-    const n=[1,2,3]
+import BlueButton from '../../components/BlueButton';
+import CartStyle from "./CartStyle";
+
+
+export default function Cart(){
+    const n = [1,2,3];
+
     return(
     <>
-    <Caixa>
-        <IMG2 src='Arrow - Left.png'></IMG2>
-        <p><Ab>MY Cart</Ab></p >
-        <IMG22  ></IMG22 >
-    </Caixa>
-    <Oder>
-        Orders
-    </Oder>
-    <Container>
-    
-    <Oder>
-        Orders
-    </Oder>
-    {n.map((ns)=>{
-        return(
-            <>
-            <Cartt/>
-            </>
-        )
-    })}
+        <Caixa>
+            <IMG2 src='Arrow - Left.png'></IMG2>
+            <p><Ab>MY Cart</Ab></p >
+            <IMG22  ></IMG22 >
+        </Caixa>
+        <Oder>
+            Orders
+        </Oder>
+        <Container>
+        
+        <Oder>
+            Orders
+        </Oder>
+        {n.map((ns)=>{
+            return(
+                <>
+                <CartStyle/>
+                </>
+            )
+        })}
  
    
-    <Fim >
-        <Item><p>Subtotal</p></Item>
-        < Item2><p>10</p></ Item2>
-    </Fim >
-    < Linha ></ Linha >
-    <Fim >
-        <Item><p>Shipping</p></Item>
-        < Item2><p>10</p></ Item2>
-    </Fim >
-    < Linha ></ Linha >
-    <Fim >
-        <Item><p>Bag Total</p></Item>
-        < Item2><p>10</p></ Item2>
-    </Fim>
-    < Linha ></ Linha >
-    <B>CKECKOUT </B>
-    </Container>
+        <Fim >
+            <Item><p>Subtotal</p></Item>
+            < Item2><p>10</p></ Item2>
+        </Fim >
+        < Linha ></ Linha >
+        <Fim >
+            <Item><p>Shipping</p></Item>
+            < Item2><p>10</p></ Item2>
+        </Fim >
+        < Linha ></ Linha >
+        <Fim >
+            <Item><p>Bag Total</p></Item>
+            < Item2><p>10</p></ Item2>
+        </Fim>
+        < Linha ></ Linha >
+        <BlueButton>CHECKOUT </BlueButton>
+        </Container>
     
     </>)
 }
@@ -62,12 +65,6 @@ const Item2 = styled.div`
     display: flex;
     flex-direction: row-reverse;
     width:100px;
-`
-const B= styled.button`
-height:70px;
-width:350px;
-border-radius: 35px;
-background: rgb(43, 143, 235);
 `
 const Fim = styled.div`
 display:flex;
@@ -90,7 +87,7 @@ const Oder  = styled.p`
     margin-left: 30px;
 }
 `
-const Cart = styled.div`
+const Cartlayout = styled.div`
 display: flex;
 margin-bottom: 20px;s
 `

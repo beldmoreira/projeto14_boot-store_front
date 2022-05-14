@@ -3,6 +3,7 @@ import { useState } from "react";
 import Form from "../../components/Form";
 import Input from "../../components/Input";
 import Pair from "../../assets/pairshoes.png";
+import {IoLockClosed, IoMail } from "react-icons/io5";
 import BlueButton from "../../components/BlueButton";
 import api from "../../services/api";
 import useAuth from "../../hooks/useAuth";
@@ -43,6 +44,7 @@ export default function Login(){
         <Container>
             <Span> Login </Span>
             <Form onSubmit={handleSubmit}>
+              <IoMail color="#2B8FEB"/>
                 <Input
                 type="email"
                 placeholder="E-mail"
@@ -50,7 +52,8 @@ export default function Login(){
                 onChange={handleChange}
                 value={formData.email}
                 />
-             
+              <IoLockClosed color="#2B8FEB"/>
+
                 <Input
                 type="password"
                 placeholder="Senha"
@@ -59,7 +62,7 @@ export default function Login(){
                 value={formData.password}
                 />
             
-                <BlueButton onClick={() => navigate("/register")} >
+                <BlueButton onClick={() => navigate("/4")} >
                      Entrar
                 </BlueButton>
             </Form>

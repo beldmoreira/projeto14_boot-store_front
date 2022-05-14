@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { useState } from "react";
-import "./estilo.css"
+import "./style.jsx"
+import BlueButton from '../../components/BlueButton.jsx';
 export default function Tela7(){
     const [valor, setValor] = useState('ok');
     function val(){
@@ -28,7 +29,7 @@ export default function Tela7(){
             <B >batata </B>
             </div  >
         </Cartao>
-        <B onClick={val}>CKECKOUT </B>
+        <BlueButton onClick={val}>PAYMENT </BlueButton>
        
 
     </Container>
