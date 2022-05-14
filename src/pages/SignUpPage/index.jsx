@@ -3,8 +3,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Form from "../../components/Form";
 import Input from "../../components/Input";
-import { IoLockClosed, IoPerson, IoMail } from "react-icons/io5";
-
 import BlueButton from "../../components/BlueButton";
 import axios from "axios";
 
@@ -39,7 +37,7 @@ function SignUpPage() {
       <>
         <Span>Crie sua conta</Span>
         <Form>
-          <IoPerson color="#2B8FEB"/>
+          
           <Input
             type="text"
             value={name}
@@ -47,7 +45,6 @@ function SignUpPage() {
             onChange={(e) => setName(e.target.value)}
           />
 
-          <IoMail color="#2B8FEB"/>
           <Input
             type="text"
             value={email}
@@ -55,7 +52,7 @@ function SignUpPage() {
             onChange={(e) => setEmail(e.target.value)}
           />
 
-          <IoLockClosed color="#2B8FEB"/>
+     
 
           <Input
             type="text"
@@ -64,7 +61,6 @@ function SignUpPage() {
             onChange={(e) => setPassword(e.target.value)}
           />
 
-          <IoLockClosed color="#2B8FEB"/>
           <Input
             type="text"
             value={confirmPassword}
