@@ -1,0 +1,13 @@
+.Fim{
+
+    height:350px;
+    width:400px;
+    background: red;
+    position: absolute;
+        top:100px;
+        left: -50px;
+    
+    }
+    .ok{
+        display:none;
+    }

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { useState } from "react";
-import "./style.jsx"
+import "./style.css"
 import BlueButton from '../../components/BlueButton.jsx';
 export default function Tela7(){
     const [valor, setValor] = useState('ok');
@@ -39,26 +39,7 @@ export default function Tela7(){
     
 }
 //display:none;
-const Fim  = styled.div`
-display:none;
-height:350px;
-width:400px;
-background: red;
-position: absolute;
-    top:100px;
-    left: -50px;
 
-`
-const Fim2  = styled.div`
-display:none;
-height:350px;
-width:400px;
-background: rgb(43, 143, 235);
-position: absolute;
-    top:100px;
-    left: -50px;
-
-`
 const B= styled.button`
 height:70px;
 width:350px;

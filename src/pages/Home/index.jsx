@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from 'react';
-import {B,Container,Caixa,IMG,IMG2,IMG22,Anuncio2,P,D,Oder} from "./style";
+import {Container,Caixa,IMG2,IMG22,Anuncio2,Oder} from "./style";
 import BlueButton from "../../components/BlueButton";
 import axios from 'axios';
 import Div from "./Div";

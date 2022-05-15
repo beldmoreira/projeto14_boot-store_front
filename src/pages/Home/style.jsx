@@ -1,11 +1,6 @@
 import styled from "styled-components"
 
-const B= styled.button`
-height:70px;
-width:350px;
-border-radius: 35px;
-background: rgb(43, 143, 235);
-`
+
 const Container = styled.div`
 display:flex;
 justify-content:center;
@@ -18,9 +13,7 @@ margin-bottom: 20px;
 justify-content:space-between;
 margin-top: 30px;
 `
-const IMG = styled.img`
 
-`
 const IMG2 = styled.img`
     margin-right:30px;
 
@@ -35,12 +28,7 @@ const Anuncio2 = styled.div`
     margin-bottom: 30px;
     width:350px;
 `
-const P = styled.p`
-margin-left: 35px;
-`
-const D = styled.div`
-margin-right:10px;
-`
+
 const Oder  = styled.p`
     margin-top: 20px;
     margin-bottom: 20px;
@@ -48,15 +36,13 @@ const Oder  = styled.p`
 }
 `
 export{
-    B,
+    
     Container,
     Caixa,
-    IMG,
     IMG2,
     IMG22,
     Anuncio2,
-    P,
-    D,
+    
     Oder
 
 }
