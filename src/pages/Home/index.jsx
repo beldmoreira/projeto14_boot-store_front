@@ -5,7 +5,7 @@ import BlueButton from "../../components/BlueButton";
 import axios from 'axios';
 import Div from "./Div";
 export default function Tela4(){
-    const n=[1,2,3,4,5,6]
+    const n=[{foto:'klipartz 39.png',nome:"nome",preco:"preço" },{foto:'klipartz 39.png',nome:"nome",preco:"preço" },{foto:'klipartz 39.png',nome:"nome",preco:"preço" },{foto:'klipartz 39.png',nome:"nome",preco:"preço" },{foto:'klipartz 39.png',nome:"nome",preco:"preço" },{foto:'klipartz 39.png',nome:"nome",preco:"preço" }]
     
     return(
     <>
@@ -27,7 +27,7 @@ export default function Tela4(){
             {n.map((ns)=>{
             return(
                 <>
-                    <Div/>
+                   <Div foto={ns.foto} nome={ns.nome} preco={ns.preco}/>
                 </>
                 )
             })}
@@ -40,7 +40,7 @@ export default function Tela4(){
             {n.map((ns)=>{
             return(
                 <>
-                    <Div/>
+                    <Div  foto={ns.foto} nome={ns.nome} preco={ns.preco}/>
                 </>
                 )
             })}
