@@ -10,16 +10,16 @@ export default function Cart(){
     <>
         <Caixa>
             <IMG2 src='Arrow - Left.png'></IMG2>
-            <p><Ab>MY Cart</Ab></p >
+            <p><Ab>Meu Carrinho</Ab></p >
             <IMG22  ></IMG22 >
         </Caixa>
         <Oder>
-            Orders
+           Pedidos
         </Oder>
         <Container>
         
         <Oder>
-            Orders
+            Pedidos
         </Oder>
         {n.map((ns)=>{
             return(

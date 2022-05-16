@@ -60,7 +60,7 @@ export default function Login(){
                 value={formData.password}
                 />
             
-                <BlueButton onClick={() => navigate("/4")} >
+                <BlueButton onClick={() => navigate("/home")} >
                      Entrar
                 </BlueButton>
             </Form>

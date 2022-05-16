@@ -1,16 +1,33 @@
 import { useState } from "react";
+import axios from "axios";
 import {Caixa,IMG22,IMG2,P,Pn,Ab,Order,Order2,FormPay,Cartao,Pnome,Cartao2, B, Container} from "./style.jsx"
 import BlueButton from '../../components/BlueButton.jsx';
 
 
-export default function Tela7(){
+export default function Payment(){
     const [valor, setValor] = useState('ok');
+    const [buyerName, setBuyerName] = useState("");
     const [address, setAddress] = useState("");
+    const [cardNumber, setCardNumber] = useState("");
+    
 
-  
-    function val(){
-        setValor('Fim')
-    }
+      async function handleSubmit(e) {
+        e.preventDefault();
+        try {
+          await axios.post("http://localhost:5000/order", {
+            buyerName,
+            address,
+            cardNumber
+          });
+    
+          alert("Pedido feito com sucesso!");
+          
+        } catch (error) {
+          alert("Ops! Infelizmente aconteceu um erro! Tente novamente!");
+          console.log(error);
+        }
+      }  
+     
     return(
         <>
             <Caixa>
@@ -19,12 +36,27 @@ export default function Tela7(){
                 <IMG22  ></IMG22 >
             </Caixa>
             <Order>Endereço</Order>
-            <FormPay> 
+
+            <FormPay onSubmit={handleSubmit}> 
                 <Order2
                 type="text"
-                value={address}
                 placeholder="Endereço"
                 onChange={(e) => setAddress(e.target.value)}
+                value ={address}
+                />
+             <Order> Nome do comprador </Order>  
+                <Order2 
+                type="text"
+                placeholder="Nome impresso no cartão"
+                onChange={(e) => setBuyerName(e.target.value)}
+                value ={buyerName}
+                />
+             <Order>Número do cartão</Order>   
+                <Order2
+                type="number"
+                placeholder="Número impresso no cartão"
+                onChange={(e) => setCardNumber(e.target.value)}
+                value ={cardNumber}
                 />
             </FormPay>
                 <Order> Frete grátis para todo Brasil </Order>
@@ -32,14 +64,14 @@ export default function Tela7(){
             <Container>
                 <Cartao>
                     <P>Cartão de Crédito</P>
-                    <Pn>1452 5847250 5485</Pn>
-                    < Pnome>Mohammod Ali</Pnome>
+                    <Pn>{cardNumber}</Pn>
+                    < Pnome>{buyerName}</Pnome>
                         < Cartao2></Cartao2>
                         <div className={valor} >
                         <B >batata </B>
                         </div  >
                 </Cartao>
-            <BlueButton onClick={val}>PAGAMENTO</BlueButton>
+            <BlueButton type="submit" onClick={() => prompt("Pedido realizado com sucesso!")}>PAGAMENTO</BlueButton>
        
 
             </Container>
