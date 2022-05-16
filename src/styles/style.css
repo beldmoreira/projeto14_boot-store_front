@@ -26,6 +26,7 @@
     width: 100%;
     height: 100%;
     font-family: "gilroyextrabold", "gilroylight", Inter, sans-serif;
+    overflow: hidden;
   }
   
   .root {
