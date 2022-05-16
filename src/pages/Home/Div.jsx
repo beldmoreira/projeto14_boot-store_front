@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
-export default function Div(){
+export default function Div(pros){
+    const {foto,nome,preco} =pros 
     return(
         <>
             <D>
-                <img src='klipartz 39.png'></img>
-                <P>nome</P>
-                <P>preço</P>
+                <img src={foto}></img>
+                <P>{nome}</P>
+                <P>{preco}</P>
             </D> 
         </>
     )
