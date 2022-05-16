@@ -71,7 +71,7 @@ export default function Payment(){
                         <B >batata </B>
                         </div  >
                 </Cartao>
-            <BlueButton type="submit" onClick={() => prompt("Pedido realizado com sucesso!")}>PAGAMENTO</BlueButton>
+            <BlueButton type="submit" onClick={handleSubmit}>PAGAMENTO</BlueButton>
        
 
             </Container>
