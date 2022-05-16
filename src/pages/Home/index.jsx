@@ -6,7 +6,7 @@ import axios from 'axios';
 import Div from "./Div";
 export default function Tela4(){
     const n=[{foto:'klipartz 39.png',nome:"nome",preco:"preço" },{foto:'klipartz 39.png',nome:"nome",preco:"preço" },{foto:'klipartz 39.png',nome:"nome",preco:"preço" },{foto:'klipartz 39.png',nome:"nome",preco:"preço" },{foto:'klipartz 39.png',nome:"nome",preco:"preço" },{foto:'klipartz 39.png',nome:"nome",preco:"preço" }]
-    
+    const n2=[{foto:'klipartz 39.png',nome:"nome",preco:"preço" },{foto:'klipartz 39.png',nome:"nome",preco:"preço" },{foto:'klipartz 39.png',nome:"nome",preco:"preço" },{foto:'klipartz 39.png',nome:"nome",preco:"preço" },{foto:'klipartz 39.png',nome:"nome",preco:"preço" },{foto:'klipartz 39.png',nome:"nome",preco:"preço" }]
     return(
     <>
      <Caixa>
@@ -37,7 +37,7 @@ export default function Tela4(){
         <p>Jordan Classic</p>
         <div>
             <Anuncio2>
-            {n.map((ns)=>{
+            {n2.map((ns)=>{
             return(
                 <>
                     <Div  foto={ns.foto} nome={ns.nome} preco={ns.preco}/>
